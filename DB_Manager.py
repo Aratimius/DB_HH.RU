@@ -1,4 +1,3 @@
-import os
 import psycopg2
 from dotenv import load_dotenv
 
@@ -12,7 +11,7 @@ class DBManager:
             host="localhost",
             dbname="HH_RU",
             user="postgres",
-            password='' # свой пароль от postgres
+            password=''  # свой пароль от postgres
         )
         return connection
 
